@@ -1,10 +1,10 @@
 import React from 'react'
-import {Link , NavLink, withRouter} from 'react-router-dom'
+import {Link , NavLink} from 'react-router-dom'
 import dota from '../resources/Dota.png'
 
 const Navbar = (props) => {
     return(
-        <nav className="nav-wrappper cyan lighten-1">
+        <nav className="nav-wrappper blue-grey darken-1">
             <div className="container">
                 <a  className="brand-logo">
                     <img src={dota} alt="dota logo" height="62" width="58"/>

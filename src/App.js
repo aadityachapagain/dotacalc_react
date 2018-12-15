@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import Axios from 'axios';
 import {BrowserRouter , Route , Switch } from 'react-router-dom'
 import Heros from './components/heros'
 import Home from './components/home'
@@ -12,14 +11,8 @@ import Predict from './components/predict'
 class App extends Component {
 
   componentDidMount(){
-    Axios.get('localhost:5000/api/hero',{
-    }).then(
-      (res) => { 
-        console.log(res.data)
-      }
-    ).catch((err) => {
-      console.log('error occured !')
-    })
+    fetch('http://localhost:3001/api/hero')
+    .then(res => console.log(res.json()))
   }
 
   render() {
