@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Navbar from './nav'
+import '../css/home.css'
+import dotablur from '../resources/dota_blur.jpg'
 
 class Home extends Component{
 
@@ -8,9 +10,10 @@ class Home extends Component{
         return(
             <div>
                 <Navbar />
+                <img src={dotablur} id="back-ground" />
                 <div className="container">
                     
-                    <p>
+                    <p> 
                         This is home page!
                     </p>
                 </div>
