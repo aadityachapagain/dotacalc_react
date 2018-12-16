@@ -12,6 +12,25 @@ import dev from '../resources/dev.jpg'
 
 class Home extends Component{
 
+    shuffle = (array) => {
+        var currentIndex = array.length, temporaryValue, randomIndex;
+      
+        // While there remain elements to shuffle...
+        while (0 !== currentIndex) {
+      
+          // Pick a remaining element...
+          randomIndex = Math.floor(Math.random() * currentIndex);
+          currentIndex -= 1;
+      
+          // And swap it with the current element.
+          temporaryValue = array[currentIndex];
+          array[currentIndex] = array[randomIndex];
+          array[randomIndex] = temporaryValue;
+        }
+      
+        return array;
+      }
+
     render(){
         let  classname = ['red darken-4','pink darken-4','purple darken-4','deep-purple darken-4','indigo darken-4','blue darken-4','light-blue darken-4','cyan darken-4','teal darken-4','green darken-4',' light-green darken-4','lime darken-4','amber darken-4','blue-grey darken-4']
         classname = classname.map( cls => 'card '+cls)
@@ -30,11 +49,11 @@ class Home extends Component{
                                 </div>
                             </div>
                             <div className="container col s12 m6 l6">
-                                <div className={classname[Math.floor(Math.random()*classname.length)]}>
+                                <div className={this.shuffle(classname).pop()}>
                                     <div className="card-content white-text">
                                         <p>All the Dota 2 Heros information you need to know , In same place</p>
                                     </div>
-                                    <div class="card-action">
+                                    <div className="card-action">
                                         <NavLink to='/heros'>Dota 2 Heros</NavLink>
                                     </div>
                                     </div>
@@ -51,11 +70,11 @@ class Home extends Component{
                                 </div>
                             </div>
                             <div className="container col s12 m6 l6 pull-m6 pull-l6">
-                                <div className={classname[Math.floor(Math.random()*classname.length)]}>
+                                <div className={this.shuffle(classname).pop()}>
                                     <div className="card-content white-text">
                                         <p>All the Dota 2 Heros information you need to know , In same place</p>
                                     </div>
-                                    <div class="card-action">
+                                    <div className="card-action">
                                         <NavLink to='/heros'>Dota 2 Heros</NavLink>
                                     </div>
                                     </div>
@@ -72,11 +91,11 @@ class Home extends Component{
                                 </div>
                             </div>
                             <div className="container col s12 m6 l6">
-                                <div className={classname[Math.floor(Math.random()*classname.length)]}>
+                                <div className={this.shuffle(classname).pop()}>
                                     <div className="card-content white-text">
                                         <p>All the Dota 2 Heros information you need to know , In same place</p>
                                     </div>
-                                    <div class="card-action">
+                                    <div className="card-action">
                                         <NavLink to='/heros'>Dota 2 Heros</NavLink>
                                     </div>
                                     </div>
@@ -93,11 +112,11 @@ class Home extends Component{
                                 </div>
                             </div>
                             <div className="container col s12 m6 l6 pull-m6 pull-l6">
-                                <div className={classname[Math.floor(Math.random()*classname.length)]}>
+                                <div className={this.shuffle(classname).pop()}>
                                     <div className="card-content white-text">
                                         <p>All the Dota 2 Heros information you need to know , In same place</p>
                                     </div>
-                                    <div class="card-action">
+                                    <div className="card-action">
                                         <NavLink to='/heros'>Dota 2 Heros</NavLink>
                                     </div>
                                     </div>
@@ -114,11 +133,11 @@ class Home extends Component{
                                 </div>
                             </div>
                             <div className="container col s12 m6 l6">
-                                <div className={classname[Math.floor(Math.random()*classname.length)]}>
+                                <div className={this.shuffle(classname).pop()}>
                                     <div className="card-content white-text">
                                         <p>All the Dota 2 Heros information you need to know , In same place</p>
                                     </div>
-                                    <div class="card-action">
+                                    <div className="card-action">
                                         <NavLink to='/heros'>Dota 2 Heros</NavLink>
                                     </div>
                                     </div>
@@ -135,11 +154,11 @@ class Home extends Component{
                                 </div>
                             </div>
                             <div className="container col s12 m6 l6 pull-m6 pull-l6">
-                                <div className={classname[Math.floor(Math.random()*classname.length)]}>
+                                <div className={this.shuffle(classname).pop()}>
                                     <div className="card-content white-text">
                                         <p>All the Dota 2 Heros information you need to know , In same place</p>
                                     </div>
-                                    <div class="card-action">
+                                    <div className="card-action">
                                         <NavLink to='/heros'>Dota 2 Heros</NavLink>
                                     </div>
                                     </div>
