@@ -13,7 +13,7 @@ class App extends Component {
 
   componentDidMount(){
     Axios.get('http://localhost:3001/api/hero')
-    .then(res => res.json())
+    .then(res => res.data)
     .then( data => console.log(data.slice(0,10)))
   }
 
