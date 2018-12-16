@@ -51,7 +51,9 @@ class Home extends Component{
                             <div className="container col s12 m6 l6">
                                 <div className={this.shuffle(classname).pop()}>
                                     <div className="card-content white-text">
-                                        <p>All the Dota 2 Heros information you need to know , In same place</p>
+                                        <p>All the Dota 2 Heros information you need to know , In same place. You can learn about hero roles in game 
+                                            and their techniques to better spam your hero to farm more and increase the chance of winning any game !
+                                        </p>
                                     </div>
                                     <div className="card-action">
                                         <NavLink to='/heros'>Dota 2 Heros</NavLink>
@@ -72,7 +74,10 @@ class Home extends Component{
                             <div className="container col s12 m6 l6 pull-m6 pull-l6">
                                 <div className={this.shuffle(classname).pop()}>
                                     <div className="card-content white-text">
-                                        <p>All the Dota 2 Heros information you need to know , In same place</p>
+                                        <p>
+                                            We proivde the Exclusive guides of each hero in the game individually so that you better play the games.
+                                            We will teach you some tricks about heros that you can use which can be used to finally win any game.
+                                        </p>
                                     </div>
                                     <div className="card-action">
                                         <NavLink to='/heros'>Dota 2 Heros</NavLink>
@@ -93,7 +98,12 @@ class Home extends Component{
                             <div className="container col s12 m6 l6">
                                 <div className={this.shuffle(classname).pop()}>
                                     <div className="card-content white-text">
-                                        <p>All the Dota 2 Heros information you need to know , In same place</p>
+                                        <p>
+                                            Put hero game stats with heros in Radiant and Dire side and successfully 
+                                            predict the outcome of any games considering User will play without any mistakes of their own.
+                                            It can be used while hero pickUp mode when you confused to pick any hero just buzz in the webpage pick heros of your team and opponent
+                                            and see the chance of winning the game.
+                                        </p>
                                     </div>
                                     <div className="card-action">
                                         <NavLink to='/heros'>Dota 2 Heros</NavLink>
@@ -156,7 +166,14 @@ class Home extends Component{
                             <div className="container col s12 m6 l6 pull-m6 pull-l6">
                                 <div className={this.shuffle(classname).pop()}>
                                     <div className="card-content white-text">
-                                        <p>All the Dota 2 Heros information you need to know , In same place</p>
+                                        <p>If you want us Developer of this site to add new feature .Just drop us you view toward the webapp 
+                                            and todo's to be added in this webapp. We would happy to add new cool stuff as your suggestions.
+                                            Your suggestions are highly appriciated !
+                                            <br /><br />
+                                            Thanks
+                                            <br /><br />
+                                            Keep Gaming !
+                                        </p>
                                     </div>
                                     <div className="card-action">
                                         <NavLink to='/heros'>Dota 2 Heros</NavLink>
