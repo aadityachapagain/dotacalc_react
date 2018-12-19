@@ -10,6 +10,7 @@ import hero from '../resources/hero_blur.jpg'
 import roshan from '../resources/roshan_blur.jpg'
 import dev from '../resources/dev.jpg'
 
+
 class Home extends Component{
 
     shuffle = (array) => {

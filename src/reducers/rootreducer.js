@@ -1,5 +1,7 @@
 const initState = {
-    heros: []
+    heros: [],
+    radiant:false,
+    dire:false,
 }
 
 const rootReducer = (state = initState, action ) => {
@@ -13,10 +15,10 @@ const rootReducer = (state = initState, action ) => {
         }
     }
 
-    if (action.type === 'ADD_TODO'){
+    if (action.type === 'ADD_HEROS'){
         return {
             ...state,
-            todos:[...state.todos, {id:Math.random(),content: action.todo}]
+            heros:action.heros
         }
     }
 

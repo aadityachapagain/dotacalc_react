@@ -7,6 +7,8 @@ import Home from './components/home'
 import Hero from './components/hero'
 import Contact from './components/contact'
 import Predict from './components/predict'
+import { addHeros } from '../actions/postActions'
+import { connect } from 'react-redux'
 
 
 class App extends Component {
@@ -14,7 +16,10 @@ class App extends Component {
   componentDidMount(){
     Axios.get('http://localhost:3001/api/hero')
     .then(res => res.data)
-    .then( data => console.log(data.slice(0,10)))
+    .then( data => {
+      this.props.dispatch(data)
+    })
+
   }
 
   render() {
@@ -34,4 +39,12 @@ class App extends Component {
   }
 }
 
-export default App;
+
+const mapDispatchToProps = (Dispatch) => {
+  return {
+      dispatch : (heros) => {Dispatch(addHeros(heros))}
+  }
+}
+
+
+export default connect(null,mapDispathToProps)(App);
