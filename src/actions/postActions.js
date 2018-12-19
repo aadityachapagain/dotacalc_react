@@ -1,4 +1,4 @@
-const addHeros = (todo) => {
+const addHeros = (heros) => {
     return {
         type: 'ADD_HEROS',
         heros

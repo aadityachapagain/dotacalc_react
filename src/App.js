@@ -7,7 +7,7 @@ import Home from './components/home'
 import Hero from './components/hero'
 import Contact from './components/contact'
 import Predict from './components/predict'
-import { addHeros } from '../actions/postActions'
+import { addHeros } from './actions/postActions'
 import { connect } from 'react-redux'
 
 
@@ -47,4 +47,4 @@ const mapDispatchToProps = (Dispatch) => {
 }
 
 
-export default connect(null,mapDispathToProps)(App);
+export default connect(null,mapDispatchToProps)(App);
